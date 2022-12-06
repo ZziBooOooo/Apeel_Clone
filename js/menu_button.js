@@ -2,13 +2,13 @@ const headerHeight = document.querySelector("header");
 const menuBtn = document.querySelector(".menuBtn");
 // console.log(headerHeight.offsetHeight)
 
-let a = headerHeight.offsetHeight;
+let ah = headerHeight.offsetHeight;
 
 $(window).scroll(() => {
   //   console.log(headerHeight.offsetHeight);
   //   console.log($(document).scrollTop());
 
-  if (a <= $(document).scrollTop()) {
+  if (ah <= $(document).scrollTop()) {
     console.log("hi");
     // alert('d')
     console.log(menuBtn);
