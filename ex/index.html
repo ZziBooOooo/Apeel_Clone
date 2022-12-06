@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>
+      CodePen - Scroll-Linked Animations: Horizontal scroll section (WAAPI +
+      ScrollTimeline 2021 version)
+    </title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/skn8ash.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <div class="testtt">
+      <div class="container">
+        <section data-bgcolor="#bcb8ad" data-textcolor="#032f35">
+          <div>
+            <h1 data-scroll data-scroll-speed="1">
+              <span>Horizontal</span> <span>scroll</span> <span>section</span>
+            </h1>
+            <p data-scroll data-scroll-speed="2" data-scroll-delay="0.2">
+              With WAAPI + ScrollTimeline
+            </p>
+          </div>
+        </section>
+
+        <section id="sectionPin">
+          <div class="pin-wrap">
+            <h2>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </h2>
+            <img
+              src="https://images.pexels.com/photos/5207262/pexels-photo-5207262.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=900"
+              alt=""
+            />
+            <img
+              src="https://images.pexels.com/photos/3371358/pexels-photo-3371358.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=900"
+              alt=""
+            />
+            <img
+              src="https://images.pexels.com/photos/3618545/pexels-photo-3618545.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=900"
+              alt=""
+            />
+          </div>
+        </section>
+        <section data-bgcolor="#e3857a" data-textcolor="#f1dba7">
+          <img
+            src="https://images.pexels.com/photos/4791474/pexels-photo-4791474.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            alt=""
+          />
+          <h2 data-scroll data-scroll-speed="1" class="credit">
+            <a
+              href="https://twitter.com/bramus"
+              target="_top"
+              rel="noreferrer noopener"
+              >Made by Bramus</a
+            >
+          </h2>
+        </section>
+      </div>
+
+      <div class="warning">
+        ⚠️ Your browser does not support CSS Scroll-Linked Animations, so this
+        demo won't work. If you're feeling adventurous use Chrome 89 with
+        “Experimental Web Platform Features” enabled. Alternatively you can
+        <a
+          href="https://twitter.com/bramus/status/1356589270379724802"
+          target="_top"
+          >watch a recording of this demo in action</a
+        >
+        or
+        <a
+          href="https://codepen.io/cameronknight/pen/qBNvrRQ"
+          target="_top"
+          rel="noreferrer noopener"
+          >check out a JS version this demo was based upon</a
+        >.
+      </div>
+    </div>
+    <!-- partial -->
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>

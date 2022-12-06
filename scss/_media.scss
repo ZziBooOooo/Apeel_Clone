@@ -1,0 +1,45 @@
+$mobile: 767px;
+$tablet: 1023px;
+$desktop: 1024px;
+
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: ($mobile + 1)) and (max-width: $tablet) {
+    @content;
+  }
+}
+
+/*반응형, 브라우저 크기가 1024px 이상일때*/
+@mixin desktop {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}
+
+/* @mixin device($min, $max) {
+  @media (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}
+
+@include device($mobile, $tablet) {
+  //mobile
+  body {
+    background-color: red; // 이 내용이 @content부분으로 들어감
+  }
+}
+
+@include device(768px, 1024px) {
+  //tablet
+  body {
+    background-color: blue;
+  }
+}
+
+//다른 문서에서 import로 이문서를 불러들여야한다.
+ */
