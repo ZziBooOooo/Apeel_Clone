@@ -1,4 +1,4 @@
-const headerHeight = document.querySelector("header");
+/* const headerHeight = document.querySelector("header");
 const menuBtn = document.querySelector(".menuBtn");
 // console.log(headerHeight.offsetHeight)
 
@@ -17,5 +17,5 @@ $(window).scroll(() => {
   } else {
     menuBtn.style = `opacity:0;`;
   }
-});
+}); */
 // css에서 스타일하면 적용이 안됨 ->
